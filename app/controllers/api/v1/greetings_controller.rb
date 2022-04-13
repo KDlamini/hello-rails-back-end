@@ -6,13 +6,16 @@ class Api::V1::GreetingsController < ApplicationController
   end
 
   def show
-    @greeting = Greeting.find(params[:id])
     return booking_not_found unless @greeting
 
     render json: @greeting
   end
 
   private
+
+  def set_booking
+    @greeting = Greeting.find_by(id: params[:id])
+  end
 
   def booking_not_found
     render json: { error: 'Greeting not found' }, status: :not_found
