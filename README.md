@@ -7,6 +7,10 @@ An api with Greetings for welcome page.
  [API Docs](https://hello-rails-backendapi.herokuapp.com/api-docs/index.html)
 
  [Greetings JSON](https://hello-rails-backendapi.herokuapp.com/api/v1/greetings)
+
+ ## React App
+
+ [hello-rails-front-end](https://github.com/KDlamini/hello-rails-front-end)
 ## Built With
 
 - Ruby version 3.1.1
